@@ -1,0 +1,710 @@
+[1mstarted roslaunch server http://192.168.0.100:38303/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /amcl/
+
+PARAMETERS
+ * /LD14/disable_max: [240]
+ * /LD14/disable_min: [120]
+ * /LD14/flag_parted: False
+ * /LD19/disable_max: [240]
+ * /LD19/disable_min: [120]
+ * /LD19/flag_parted: False
+ * /amcl/gui_publish_rate: 10.0
+ * /amcl/kld_err: 0.05
+ * /amcl/kld_z: 0.99
+ * /amcl/laser_lambda_short: 0.1
+ * /amcl/laser_likelihood_max_dist: 2.0
+ * /amcl/laser_max_beams: 60
+ * /amcl/laser_max_range: 12.0
+ * /amcl/laser_model_type: likelihood_field
+ * /amcl/laser_sigma_hit: 0.2
+ * /amcl/laser_z_hit: 0.5
+ * /amcl/laser_z_max: 0.05
+ * /amcl/laser_z_rand: 0.5
+ * /amcl/laser_z_short: 0.05
+ * /amcl/max_particles: 2000
+ * /amcl/min_particles: 500
+ * /amcl/odom_alpha1: 0.2
+ * /amcl/odom_alpha2: 0.2
+ * /amcl/odom_alpha3: 0.2
+ * /amcl/odom_alpha4: 0.2
+ * /amcl/odom_alpha5: 0.1
+ * /amcl/odom_frame_id: odom_combined
+ * /amcl/odom_model_type: omni-corrected
+ * /amcl/recovery_alpha_fast: 0.0
+ * /amcl/recovery_alpha_slow: 0.0
+ * /amcl/resample_interval: 1
+ * /amcl/transform_tolerance: 1.0
+ * /amcl/update_min_a: 0.2
+ * /amcl/update_min_d: 0.25
+ * /amcl/use_map_topic: False
+ * /if_akm_yes_or_no: yes
+ * /lslidar_driver_node/compensation: False
+ * /lslidar_driver_node/disable_max: [240]
+ * /lslidar_driver_node/disable_min: [120]
+ * /lslidar_driver_node/frame_id: laser
+ * /lslidar_driver_node/high_reflection: False
+ * /lslidar_driver_node/interface_selection: serial
+ * /lslidar_driver_node/lidar_name: N10_P
+ * /lslidar_driver_node/max_range: 100.0
+ * /lslidar_driver_node/min_range: 0.15
+ * /lslidar_driver_node/pubPointCloud2: False
+ * /lslidar_driver_node/pubScan: True
+ * /lslidar_driver_node/scan_topic: scan
+ * /lslidar_driver_node/serial_port: /dev/wheeltec_lidar
+ * /lslidar_driver_node/truncated_mode: 0
+ * /lslidar_driver_node/use_gps_ts: False
+ * /move_base/GlobalPlanner/allow_unknown: True
+ * /move_base/GlobalPlanner/cost_factor: 3.0
+ * /move_base/GlobalPlanner/default_tolerance: 0.0
+ * /move_base/GlobalPlanner/lethal_cost: 253
+ * /move_base/GlobalPlanner/neutral_cost: 50
+ * /move_base/GlobalPlanner/old_navfn_behavior: False
+ * /move_base/GlobalPlanner/orientation_mode: 0
+ * /move_base/GlobalPlanner/orientation_window_size: 1
+ * /move_base/GlobalPlanner/outline_map: True
+ * /move_base/GlobalPlanner/publish_potential: True
+ * /move_base/GlobalPlanner/use_dijkstra: True
+ * /move_base/GlobalPlanner/use_grid_path: False
+ * /move_base/GlobalPlanner/use_quadratic: True
+ * /move_base/GlobalPlanner/visualize_potential: False
+ * /move_base/TebLocalPlannerROS/acc_lim_theta: 0.3
+ * /move_base/TebLocalPlannerROS/acc_lim_x: 0.2
+ * /move_base/TebLocalPlannerROS/acc_lim_y: 0.0
+ * /move_base/TebLocalPlannerROS/cmd_angle_instead_rotvel: False
+ * /move_base/TebLocalPlannerROS/costmap_converter_plugin: 
+ * /move_base/TebLocalPlannerROS/costmap_converter_rate: 5
+ * /move_base/TebLocalPlannerROS/costmap_converter_spin_thread: True
+ * /move_base/TebLocalPlannerROS/costmap_obstacles_behind_robot_dist: 1.5
+ * /move_base/TebLocalPlannerROS/delete_detours_backwards: True
+ * /move_base/TebLocalPlannerROS/dt_hysteresis: 0.1
+ * /move_base/TebLocalPlannerROS/dt_ref: 0.45
+ * /move_base/TebLocalPlannerROS/dynamic_obstacle_inflation_dist: 0.6
+ * /move_base/TebLocalPlannerROS/enable_homotopy_class_planning: False
+ * /move_base/TebLocalPlannerROS/enable_multithreading: True
+ * /move_base/TebLocalPlannerROS/feasibility_check_no_poses: 5
+ * /move_base/TebLocalPlannerROS/footprint_model/type: polygon
+ * /move_base/TebLocalPlannerROS/footprint_model/vertices: [[-0.09, -0.185],...
+ * /move_base/TebLocalPlannerROS/free_goal_vel: False
+ * /move_base/TebLocalPlannerROS/global_plan_overwrite_orientation: False
+ * /move_base/TebLocalPlannerROS/h_signature_prescaler: 0.5
+ * /move_base/TebLocalPlannerROS/h_signature_threshold: 0.1
+ * /move_base/TebLocalPlannerROS/include_costmap_obstacles: True
+ * /move_base/TebLocalPlannerROS/include_dynamic_obstacles: True
+ * /move_base/TebLocalPlannerROS/map_frame: map
+ * /move_base/TebLocalPlannerROS/max_global_plan_lookahead_dist: 3.0
+ * /move_base/TebLocalPlannerROS/max_number_classes: 4
+ * /move_base/TebLocalPlannerROS/max_ratio_detours_duration_best_duration: 3.0
+ * /move_base/TebLocalPlannerROS/max_vel_theta: 1.5
+ * /move_base/TebLocalPlannerROS/max_vel_x: 0.5
+ * /move_base/TebLocalPlannerROS/max_vel_x_backwards: 0.5
+ * /move_base/TebLocalPlannerROS/max_vel_y: 0.0
+ * /move_base/TebLocalPlannerROS/min_obstacle_dist: 0.1
+ * /move_base/TebLocalPlannerROS/min_turning_radius: 0.75
+ * /move_base/TebLocalPlannerROS/no_inner_iterations: 5
+ * /move_base/TebLocalPlannerROS/no_outer_iterations: 4
+ * /move_base/TebLocalPlannerROS/obstacle_cost_exponent: 4
+ * /move_base/TebLocalPlannerROS/obstacle_heading_threshold: 0.45
+ * /move_base/TebLocalPlannerROS/obstacle_poses_affected: 15
+ * /move_base/TebLocalPlannerROS/odom_topic: odom
+ * /move_base/TebLocalPlannerROS/optimization_activate: True
+ * /move_base/TebLocalPlannerROS/optimization_verbose: False
+ * /move_base/TebLocalPlannerROS/oscillation_filter_duration: 10
+ * /move_base/TebLocalPlannerROS/oscillation_omega_eps: 0.1
+ * /move_base/TebLocalPlannerROS/oscillation_recovery: False
+ * /move_base/TebLocalPlannerROS/oscillation_recovery_min_duration: 10
+ * /move_base/TebLocalPlannerROS/oscillation_v_eps: 0.1
+ * /move_base/TebLocalPlannerROS/penalty_epsilon: 0.1
+ * /move_base/TebLocalPlannerROS/roadmap_graph_area_length_scale: 1.0
+ * /move_base/TebLocalPlannerROS/roadmap_graph_area_width: 5
+ * /move_base/TebLocalPlannerROS/roadmap_graph_no_samples: 15
+ * /move_base/TebLocalPlannerROS/selection_alternative_time_cost: False
+ * /move_base/TebLocalPlannerROS/selection_cost_hysteresis: 1.0
+ * /move_base/TebLocalPlannerROS/selection_obst_cost_scale: 1.0
+ * /move_base/TebLocalPlannerROS/selection_prefer_initial_plan: 0.95
+ * /move_base/TebLocalPlannerROS/shrink_horizon_backup: True
+ * /move_base/TebLocalPlannerROS/shrink_horizon_min_duration: 10
+ * /move_base/TebLocalPlannerROS/switching_blocking_period: 0.0
+ * /move_base/TebLocalPlannerROS/teb_autosize: True
+ * /move_base/TebLocalPlannerROS/viapoints_all_candidates: True
+ * /move_base/TebLocalPlannerROS/visualize_hc_graph: False
+ * /move_base/TebLocalPlannerROS/visualize_with_time_as_z_axis_scale: False
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_x: 1
+ * /move_base/TebLocalPlannerROS/weight_adapt_factor: 2
+ * /move_base/TebLocalPlannerROS/weight_dynamic_obstacle: 10
+ * /move_base/TebLocalPlannerROS/weight_dynamic_obstacle_inflation: 0.2
+ * /move_base/TebLocalPlannerROS/weight_inflation: 0.2
+ * /move_base/TebLocalPlannerROS/weight_kinematics_forward_drive: 1
+ * /move_base/TebLocalPlannerROS/weight_kinematics_nh: 1000
+ * /move_base/TebLocalPlannerROS/weight_kinematics_turning_radius: 1
+ * /move_base/TebLocalPlannerROS/weight_max_vel_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_max_vel_x: 2
+ * /move_base/TebLocalPlannerROS/weight_obstacle: 100
+ * /move_base/TebLocalPlannerROS/weight_optimaltime: 1
+ * /move_base/TebLocalPlannerROS/weight_shortest_path: 0
+ * /move_base/TebLocalPlannerROS/weight_viapoint: 1
+ * /move_base/TebLocalPlannerROS/wheelbase: 0.322
+ * /move_base/TebLocalPlannerROS/xy_goal_tolerance: 0.2
+ * /move_base/TebLocalPlannerROS/yaw_goal_tolerance: 0.1
+ * /move_base/base_global_planner: global_planner/Gl...
+ * /move_base/base_local_planner: teb_local_planner...
+ * /move_base/clearing_rotation_allowed: False
+ * /move_base/conservative_reset_dist: 3.0
+ * /move_base/controller_frequency: 10.0
+ * /move_base/controller_patience: 3.0
+ * /move_base/global_costmap/footprint: [[-0.09, -0.185],...
+ * /move_base/global_costmap/global_frame: map
+ * /move_base/global_costmap/height: 10.0
+ * /move_base/global_costmap/inflation_layer/cost_scaling_factor: 20
+ * /move_base/global_costmap/inflation_layer/enabled: True
+ * /move_base/global_costmap/inflation_layer/inflation_radius: 0.45
+ * /move_base/global_costmap/obstacle_layer/combination_method: 1
+ * /move_base/global_costmap/obstacle_layer/enabled: True
+ * /move_base/global_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacle_layer/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacle_layer/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacle_layer/scan/expected_update_rate: 0.0
+ * /move_base/global_costmap/obstacle_layer/scan/marking: True
+ * /move_base/global_costmap/obstacle_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacle_layer/scan/min_obstacle_height: 0.0
+ * /move_base/global_costmap/obstacle_layer/scan/observation_persistence: 0.0
+ * /move_base/global_costmap/obstacle_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacle_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/global_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/global_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 1.0
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_footprint
+ * /move_base/global_costmap/rolling_window: False
+ * /move_base/global_costmap/static_layer/enabled: True
+ * /move_base/global_costmap/static_layer/first_map_only: False
+ * /move_base/global_costmap/static_layer/lethal_cost_threshold: 100
+ * /move_base/global_costmap/static_layer/map_topic: map
+ * /move_base/global_costmap/static_layer/subscribe_to_updates: False
+ * /move_base/global_costmap/static_layer/track_unknown_space: True
+ * /move_base/global_costmap/static_layer/trinary_costmap: True
+ * /move_base/global_costmap/static_layer/unknown_cost_value: -1
+ * /move_base/global_costmap/transform_tolerance: 1
+ * /move_base/global_costmap/update_frequency: 1.5
+ * /move_base/global_costmap/width: 10.0
+ * /move_base/local_costmap/footprint: [[-0.09, -0.185],...
+ * /move_base/local_costmap/global_frame: map
+ * /move_base/local_costmap/height: 4.0
+ * /move_base/local_costmap/inflation_layer/cost_scaling_factor: 20
+ * /move_base/local_costmap/inflation_layer/enabled: True
+ * /move_base/local_costmap/inflation_layer/inflation_radius: 0.45
+ * /move_base/local_costmap/obstacle_layer/combination_method: 1
+ * /move_base/local_costmap/obstacle_layer/enabled: True
+ * /move_base/local_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacle_layer/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacle_layer/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacle_layer/scan/expected_update_rate: 0.0
+ * /move_base/local_costmap/obstacle_layer/scan/marking: True
+ * /move_base/local_costmap/obstacle_layer/scan/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacle_layer/scan/min_obstacle_height: 0.0
+ * /move_base/local_costmap/obstacle_layer/scan/observation_persistence: 0.0
+ * /move_base/local_costmap/obstacle_layer/scan/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacle_layer/scan/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/local_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/local_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/local_costmap/plugins: [{'type': 'costma...
+ * /move_base/local_costmap/publish_frequency: 3.0
+ * /move_base/local_costmap/resolution: 0.05
+ * /move_base/local_costmap/robot_base_frame: base_footprint
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_layer/enabled: True
+ * /move_base/local_costmap/static_layer/first_map_only: False
+ * /move_base/local_costmap/static_layer/lethal_cost_threshold: 100
+ * /move_base/local_costmap/static_layer/map_topic: map
+ * /move_base/local_costmap/static_layer/subscribe_to_updates: False
+ * /move_base/local_costmap/static_layer/track_unknown_space: True
+ * /movTraceback (most recent call last):
+  File "/home/wheeltec/wheeltec_robot/src/turn_on_wheeltec_robot/scripts/node_ping.py", line 5, in <module>
+    import rospy
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/__init__.py", line 49, in <module>
+    from .client import spin, myargv, init_node, \
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 49, in <module>
+    import rosgraph
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosgraph/__init__.py", line 36, in <module>
+    from . masterapi import Master, MasterFailure, MasterError, MasterException
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosgraph/masterapi.py", line 41, in <module>
+    from xmlrpc.client import ServerProxy  # Python 3.x
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 52, in <module>
+    import _thread
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/wheeltec/wheeltec_robot/src/turn_on_wheeltec_robot/scripts/send_mark.py", line 4, in <module>
+    from visualization_msgs.msg import Marker
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/visualization_msgs/msg/__init__.py", line 1, in <module>
+    from ._ImageMarker import *
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/visualization_msgs/msg/_ImageMarker.py", line 10, in <module>
+    import geometry_msgs.msg
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geometry_msgs/msg/__init__.py", line 14, in <module>
+    from ._PoseArray import *
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geometry_msgs/msg/_PoseArray.py", line 2, in <module>
+    """autogenerated by genpy from geometry_msgs/PoseArray.msg. Do not edit."""
+KeyboardInterrupt
+e_base/local_costmap/static_layer/trinary_costmap: True
+ * /move_base/local_costmap/static_layer/unknown_cost_value: -1
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 5.0
+ * /move_base/local_costmap/width: 4.0
+ * /move_base/max_planning_retries: 1
+ * /move_base/oscillation_distance: 0.02
+ * /move_base/oscillation_timeout: 10.0
+ * /move_base/planner_frequency: 1.0
+ * /move_base/planner_patience: 3.0
+ * /move_base/recovery_behavior_1/reset_distance: 1.0
+ * /move_base/recovery_behavior_2/reset_distance: 3.0
+ * /move_base/recovery_behavior_3/clearing_distance: 5.0
+ * /move_base/recovery_behavior_3/limited_distance: 0.3
+ * /move_base/recovery_behavior_3/limited_rot_speed: 0.4
+ * /move_base/recovery_behavior_3/limited_trans_speed: 0.1
+ * /move_base/recovery_behavior_3/planner_namespace: TebLocalPlannerROS
+ * /move_base/recovery_behavior_enabled: False
+ * /move_base/recovery_behaviors: [{'type': 'clear_...
+ * /move_base/shutdown_costmaps: False
+ * /node_detection/node_name: /move_base
+ * /robot_BatteryCapacity: 6000
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom_combined
+ * /robot_pose_ekf/sensor_timeout: 2.0
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /rplidarNode/angle1_end: 70.0
+ * /rplidarNode/angle1_start: 50.0
+ * /rplidarNode/angle2_end: 240.0
+ * /rplidarNode/angle2_start: 120.0
+ * /rplidarNode/angle3_end: 310.0
+ * /rplidarNode/angle3_start: 290.0
+ * /rplidarNode/angle4_end: 0.0
+ * /rplidarNode/angle4_start: 0.0
+ * /rplidarNode/angle_end: 360.0
+ * /rplidarNode/angle_start: 0.0
+ * /rplidarNode/distance_max: 30.0
+ * /rplidarNode/distance_min: 0.0
+ * /rplidarNode/is_parted: False
+ * /wheeltec_robot/car_mode: senior_akm
+ * /wheeltec_robot/gyro_frame_id: gyro_link
+ * /wheeltec_robot/odom_frame_id: odom_combined
+ * /wheeltec_robot/odom_x_scale: 1.0
+ * /wheeltec_robot/odom_y_scale: 1.0
+ * /wheeltec_robot/odom_z_scale_negative: 1.0
+ * /wheeltec_robot/odom_z_scale_positive: 1.0
+ * /wheeltec_robot/robot_frame_id: base_footprint
+ * /wheeltec_robot/serial_baud_rate: 115200
+ * /wheeltec_robot/usart_port_name: /dev/wheeltec_con...
+
+NODES
+  /
+    amcl (amcl/amcl)
+    base_to_camera (tf/static_transform_publisher)
+    base_to_gyro (tf/static_transform_publisher)
+    base_to_laser (tf/static_transform_publisher)
+    base_to_link (tf/static_transform_publisher)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    lslidar_driver_node (lslidar_driver/lslidar_driver_node)
+    map_server_for_test (map_server/map_server)
+    move_base (move_base/move_base)
+    node_detection (turn_on_wheeltec_robot/node_ping.py)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    send_mark (turn_on_wheeltec_robot/send_mark.py)
+    wheeltec_robot (turn_on_wheeltec_robot/wheeltec_robot_node)
+
+[1mROS_MASTER_URI=http://192.168.0.100:11311[0m
+[1mprocess[wheeltec_robot-1]: started with pid [6593][0m
+[1mprocess[move_base-2]: started with pid [6594][0m
+[1mprocess[base_to_link-3]: started with pid [6611][0m
+[1mprocess[base_to_laser-4]: started with pid [6614][0m
+[1mprocess[base_to_camera-5]: started with pid [6615][0m
+[1mprocess[base_to_gyro-6]: started with pid [6620][0m
+[1mprocess[joint_state_publisher-7]: started with pid [6632][0m
+[1mprocess[robot_state_publisher-8]: started with pid [6644][0m
+[1mprocess[robot_pose_ekf-9]: started with pid [6650][0m
+[1mprocess[lslidar_driver_node-10]: started with pid [6651][0m
+[1mprocess[map_server_for_test-11]: started with pid [6659][0m
+[1mprocess[amcl-12]: started with pid [6666][0m
+[1mprocess[send_mark-13]: started with pid [6682][0m
+[1mprocess[node_detection-14]: started with pid [6697][0m
+[node_detection-14] killing on exit
+[send_mark-13] killing on exit
+[amcl-12] killing on exit
+[map_server_for_test-11] killing on exit
+[lslslidar_driver_node: /usr/include/boost/thread/pthread/condition_variable_fwd.hpp:116: boost::condition_variable::~condition_variable(): Assertion `!ret' failed.
+[0m[ INFO] [1766567795.056732447]: output frame: odom_combined[0m
+[0m[ INFO] [1766567795.088986763]: base frame: base_footprint[0m
+[0m[ INFO] [1766567795.352078029]: Initializing Odom sensor[0m
+[0m[ INFO] [1766567795.404146232]: Odom sensor activated[0m
+[0m[ INFO] [1766567795.404802341]: Kalman filter initialized with odom measurement[0m
+[0m[ INFO] [1766567795.460736796]: Initializing Imu sensor[0m
+[0m[ INFO] [1766567795.552269315]: Imu sensor activated[0m
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/joint_state_publisher/joint_state_publisher", line 43, in <module>
+    rospy.init_node('joint_state_publisher')
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 323, in init_node
+    raise rospy.exceptions.ROSInitException("init_node interrupted before it could complete")
+rospy.exceptions.ROSInitException: init_node interrupted before it could complete
+[0m[ INFO] [1766567793.089640000]: Data ready[0m
+[0m[ INFO] [1766567793.107367897]: wheeltec_robot serial port opened[0m
+lidar_driver_node-10] killing on exit
+[robot_pose_ekf-9] killing on exit
+[robot_state_publisher-8] killing on exit
+[joint_state_publisher-7] killing on exit
+[base_to_gyro-6] killing on exit
+[base_to_camera-5] killing on exit
+[base_to_laser-4] killing on exit
+[base_to_link-3] killing on exit
+[move_base-2] killing on exit
+[wheeltec_robot-1] killing on exit
+[1mstarted roslaunch server http://192.168.0.100:38001/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /amcl/
+
+PARAMETERS
+ * /LD14/disable_max: [240]
+ * /LD14/disable_min: [120]
+ * /LD14/flag_parted: False
+ * /LD19/disable_max: [240]
+ * /LD19/disable_min: [120]
+ * /LD19/flag_parted: False
+ * /amcl/gui_publish_rate: 10.0
+ * /amcl/kld_err: 0.05
+ * /amcl/kld_z: 0.99
+ * /amcl/laser_lambda_short: 0.1
+ * /amcl/laser_likelihood_max_dist: 2.0
+ * /amcl/laser_max_beams: 60
+ * /amcl/laser_max_range: 12.0
+ * /amcl/laser_model_type: likelihood_field
+ * /amcl/laser_sigma_hit: 0.2
+ * /amcl/laser_z_hit: 0.5
+ * /amcl/laser_z_max: 0.05
+ * /amcl/laser_z_rand: 0.5
+ * /amcl/laser_z_short: 0.05
+ * /amcl/max_particles: 2000
+ * /amcl/min_particles: 500
+ * /amcl/odom_alpha1: 0.2
+ * /amcl/odom_alpha2: 0.2
+ * /amcl/odom_alpha3: 0.2
+ * /amcl/odom_alpha4: 0.2
+ * /amcl/odom_alpha5: 0.1
+ * /amcl/odom_frame_id: odom_combined
+ * /amcl/odom_model_type: omni-corrected
+ * /amcl/recovery_alpha_fast: 0.0
+ * /amcl/recovery_alpha_slow: 0.0
+ * /amcl/resample_interval: 1
+ * /amcl/transform_tolerance: 1.0
+ * /amcl/update_min_a: 0.2
+ * /amcl/update_min_d: 0.25
+ * /amcl/use_map_topic: False
+ * /if_akm_yes_or_no: yes
+ * /lslidar_driver_node/compensation: False
+ * /lslidar_driver_node/disable_max: [240]
+ * /lslidar_driver_node/disable_min: [120]
+ * /lslidar_driver_node/frame_id: laser
+ * /lslidar_driver_node/high_reflection: False
+ * /lslidar_driver_node/interface_selection: serial
+ * /lslidar_driver_node/lidar_name: N10_P
+ * /lslidar_driver_node/max_range: 100.0
+ * /lslidar_driver_node/min_range: 0.15
+ * /lslidar_driver_node/pubPointCloud2: False
+ * /lslidar_driver_node/pubScan: True
+ * /lslidar_driver_node/scan_topic: scan
+ * /lslidar_driver_node/serial_port: /dev/wheeltec_lidar
+ * /lslidar_driver_node/truncated_mode: 0
+ * /lslidar_driver_node/use_gps_ts: False
+ * /move_base/GlobalPlanner/allow_unknown: True
+ * /move_base/GlobalPlanner/cost_factor: 3.0
+ * /move_base/GlobalPlanner/default_tolerance: 0.0
+ * /move_base/GlobalPlanner/lethal_cost: 253
+ * /move_base/GlobalPlanner/neutral_cost: 50
+ * /move_base/GlobalPlanner/old_navfn_behavior: False
+ * /move_base/GlobalPlanner/orientation_mode: 0
+ * /move_base/GlobalPlanner/orientation_window_size: 1
+ * /move_base/GlobalPlanner/outline_map: True
+ * /move_base/GlobalPlanner/publish_potential: True
+ * /move_base/GlobalPlanner/use_dijkstra: True
+ * /move_base/GlobalPlanner/use_grid_path: False
+ * /move_base/GlobalPlanner/use_quadratic: True
+ * /move_base/GlobalPlanner/visualize_potential: False
+ * /move_base/TebLocalPlannerROS/acc_lim_theta: 0.3
+ * /move_base/TebLocalPlannerROS/acc_lim_x: 0.2
+ * /move_base/TebLocalPlannerROS/acc_lim_y: 0.0
+ * /move_base/TebLocalPlannerROS/cmd_angle_instead_rotvel: False
+ * /move_base/TebLocalPlannerROS/costmap_converter_plugin: 
+ * /move_base/TebLocalPlannerROS/costmap_converter_rate: 5
+ * /move_base/TebLocalPlannerROS/costmap_converter_spin_thread: True
+ * /move_base/TebLocalPlannerROS/costmap_obstacles_behind_robot_dist: 1.5
+ * /move_base/TebLocalPlannerROS/delete_detours_backwards: True
+ * /move_base/TebLocalPlannerROS/dt_hysteresis: 0.1
+ * /move_base/TebLocalPlannerROS/dt_ref: 0.45
+ * /move_base/TebLocalPlannerROS/dynamic_obstacle_inflation_dist: 0.6
+ * /move_base/TebLocalPlannerROS/enable_homotopy_class_planning: False
+ * /move_base/TebLocalPlannerROS/enable_multithreading: True
+ * /move_base/TebLocalPlannerROS/feasibility_check_no_poses: 5
+ * /move_base/TebLocalPlannerROS/footprint_model/type: polygon
+ * /move_base/TebLocalPlannerROS/footprint_model/vertices: [[-0.09, -0.185],...
+ * /move_base/TebLocalPlannerROS/free_goal_vel: False
+ * /move_base/TebLocalPlannerROS/global_plan_overwrite_orientation: False
+ * /move_base/TebLocalPlannerROS/h_signature_prescaler: 0.5
+ * /move_base/TebLocalPlannerROS/h_signature_threshold: 0.1
+ * /move_base/TebLocalPlannerROS/include_costmap_obstacles: True
+ * /move_base/TebLocalPlannerROS/include_dynamic_obstacles: True
+ * /move_base/TebLocalPlannerROS/map_frame: map
+ * /move_base/TebLocalPlannerROS/max_global_plan_lookahead_dist: 3.0
+ * /move_base/TebLocalPlannerROS/max_number_classes: 4
+ * /move_base/TebLocalPlannerROS/max_ratio_detours_duration_best_duration: 3.0
+ * /move_base/TebLocalPlannerROS/max_vel_theta: 1.5
+ * /move_base/TebLocalPlannerROS/max_vel_x: 0.5
+ * /move_base/TebLocalPlannerROS/max_vel_x_backwards: 0.5
+ * /move_base/TebLocalPlannerROS/max_vel_y: 0.0
+ * /move_base/TebLocalPlannerROS/min_obstacle_dist: 0.1
+ * /move_base/TebLocalPlannerROS/min_turning_radius: 0.75
+ * /move_base/TebLocalPlannerROS/no_inner_iterations: 5
+ * /move_base/TebLocalPlannerROS/no_outer_iterations: 4
+ * /move_base/TebLocalPlannerROS/obstacle_cost_exponent: 4
+ * /move_base/TebLocalPlannerROS/obstacle_heading_threshold: 0.45
+ * /move_base/TebLocalPlannerROS/obstacle_poses_affected: 15
+ * /move_base/TebLocalPlannerROS/odom_topic: odom
+ * /move_base/TebLocalPlannerROS/optimization_activate: True
+ * /move_base/TebLocalPlannerROS/optimization_verbose: False
+ * /move_base/TebLocalPlannerROS/oscillation_filter_duration: 10
+ * /move_base/TebLocalPlannerROS/oscillation_omega_eps: 0.1
+ * /move_base/TebLocalPlannerROS/oscillation_recovery: False
+ * /move_base/TebLocalPlannerROS/oscillation_recovery_min_duration: 10
+ * /move_base/TebLocalPlannerROS/oscillation_v_eps: 0.1
+ * /move_base/TebLocalPlannerROS/penalty_epsilon: 0.1
+ * /move_base/TebLocalPlannerROS/roadmap_graph_area_length_scale: 1.0
+ * /move_base/TebLocalPlannerROS/roadmap_graph_area_width: 5
+ * /move_base/TebLocalPlannerROS/roadmap_graph_no_samples: 15
+ * /move_base/TebLocalPlannerROS/selection_alternative_time_cost: False
+ * /move_base/TebLocalPlannerROS/selection_cost_hysteresis: 1.0
+ * /move_base/TebLocalPlannerROS/selection_obst_cost_scale: 1.0
+ * /move_base/TebLocalPlannerROS/selection_prefer_initial_plan: 0.95
+ * /move_base/TebLocalPlannerROS/shrink_horizon_backup: True
+ * /move_base/TebLocalPlannerROS/shrink_horizon_min_duration: 10
+ * /move_base/TebLocalPlannerROS/switching_blocking_period: 0.0
+ * /move_base/TebLocalPlannerROS/teb_autosize: True
+ * /move_base/TebLocalPlannerROS/viapoints_all_candidates: True
+ * /move_base/TebLocalPlannerROS/visualize_hc_graph: False
+ * /move_base/TebLocalPlannerROS/visualize_with_time_as_z_axis_scale: False
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_x: 1
+ * /move_base/TebLocalPlannerROS/weight_adapt_factor: 2
+ * /move_base/TebLocalPlannerROS/weight_dynamic_obstacle: 10
+ * /move_base/TebLocalPlannerROS/weight_dynamic_obstacle_inflation: 0.2
+ * /move_base/TebLocalPlannerROS/weight_inflation: 0.2
+ * /move_base/TebLocalPlannerROS/weight_kinematics_forward_drive: 1
+ * /move_base/TebLocalPlannerROS/weight_kinematics_nh: 1000
+ * /move_base/TebLocalPlannerROS/weight_kinematics_turning_radius: 1
+ * /move_base/TebLocalPlannerROS/weight_max_vel_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_max_vel_x: 2
+ * /move_base/TebLocalPlannerROS/weight_obstacle: 100
+ * /move_base/TebLocalPlannerROS/weight_optimaltime: 1
+ * /move_base/TebLocalPlannerROS/weight_shortest_path: 0
+ * /move_base/TebLocalPlannerROS/weight_viapoint: 1
+ * /move_base/TebLocalPlannerROS/wheelbase: 0.322
+ * /move_base/TebLocalPlannerROS/xy_goal_tolerance: 0.2
+ * /move_base/TebLocalPlannerROS/yaw_goal_tolerance: 0.1
+ * /move_base/base_global_planner: global_planner/Gl...
+ * /move_base/base_local_planner: teb_local_planner...
+ * /move_base/clearing_rotation_allowed: False
+ * /move_base/conservative_reset_dist: 3.0
+ * /move_base/controller_frequency: 10.0
+ * /move_base/controller_patience: 3.0
+ * /move_base/global_costmap/footprint: [[-0.09, -0.185],...
+ * /move_base/global_costmap/global_frame: map
+ * /move_base/global_costmap/height: 10.0
+ * /move_base/global_costmap/inflation_layer/cost_scaling_factor: 20
+ * /move_base/global_costmap/inflation_layer/enabled: True
+ * /move_base/global_costmap/inflation_layer/inflation_radius: 0.45
+ * /move_base/global_costmap/obstacle_layer/combination_method: 1
+ * /move_base/global_costmap/obstacle_layer/enabled: True
+ * /move_base/global_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacle_layer/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacle_layer/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacle_layer/scan/expected_update_rate: 0.0
+ * /move_base/global_costmap/obstacle_layer/scan/marking: True
+ * /move_base/global_costmap/obstacle_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacle_layer/scan/min_obstacle_height: 0.0
+ * /move_base/global_costmap/obstacle_layer/scan/observation_persistence: 0.0
+ * /move_base/global_costmap/obstacle_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacle_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/global_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/global_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 1.0
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_footprint
+ * /move_base/global_costmap/rolling_window: False
+ * /move_base/global_costmap/static_layer/enabled: True
+ * /move_base/global_costmap/static_layer/first_map_only: False
+ * /move_base/global_costmap/static_layer/lethal_cost_threshold: 100
+ * /move_base/global_costmap/static_layer/map_topic: map
+ * /move_base/global_costmap/static_layer/subscribe_to_updates: False
+ * /move_base/global_costmap/static_layer/track_unknown_space: True
+ * /move_base/global_costmap/static_layer/trinary_costmap: True
+ * /move_base/global_costmap/static_layer/unknown_cost_value: -1
+ * /move_base/global_costmap/transform_tolerance: 1
+ * /move_base/global_costmap/update_frequency: 1.5
+ * /move_base/global_costmap/width: 10.0
+ * /move_base/local_costmap/footprint: [[-0.09, -0.185],...
+ * /move_base/local_costmap/global_frame: map
+ * /move_base/local_costmap/height: 4.0
+ * /move_base/local_costmap/inflation_layer/cost_scaling_factor: 20
+ * /move_base/local_costmap/inflation_layer/enabled: True
+ * /move_base/local_costmap/inflation_layer/inflation_radius: 0.45
+ * /move_base/local_costmap/obstacle_layer/combination_method: 1
+ * /move_base/local_costmap/obstacle_layer/enabled: True
+ * /move_base/local_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacle_layer/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacle_layer/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacle_layer/scan/expected_update_rate: 0.0
+ * /move_base/local_costmap/obstacle_layer/scan/marking: True
+ * /move_base/local_costmap/obstacle_layer/scan/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacle_layer/scan/min_obstacle_height: 0.0
+ * /move_base/local_costmap/obstacle_layer/scan/observation_persistence: 0.0
+ * /move_base/local_costmap/obstacle_layer/scan/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacle_layer/scan/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/local_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/local_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/local_costmap/plugins: [{'type': 'costma...
+ * /move_base/local_costmap/publish_frequency: 3.0
+ * /move_base/local_costmap/resolution: 0.05
+ * /move_base/local_costmap/robot_base_frame: base_footprint
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_layer/enabled: True
+ * /move_base/local_costmap/static_layer/first_map_only: False
+ * /move_base/local_costmap/static_layer/lethal_cost_threshold: 100
+ * /move_base/local_costmap/static_layer/map_topic: map
+ * /move_base/local_costmap/static_layer/subscribe_to_updates: False
+ * /move_base/local_costmap/static_layer/track_unknown_space: True
+ * /move_base/local_costmap/static_layer/trinary_costmap: True
+ * /move_base/local_costmap/static_layer/unknown_cost_value: -1
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 5.0
+ * /move_base/local_costmap/width: 4.0
+ * /move_base/max_planning_retries: 1
+ * /move_base/oscillation_distance: 0.02
+ * /move_base/oscillation_timeout: 10.0
+ * /move_base/planner_frequency: 1.0
+ * /move_base/planner_patience: 3.0
+ * /move_base/recovery_behavior_1/reset_distance: 1.0
+ * /move_base/recovery_behavior_2/reset_distance: 3.0
+ * /move_base/recovery_behavior_3/clearing_distance: 5.0
+ * /move_base/recovery_behavior_3/limited_distance: 0.3
+ * /move_base/recovery_behavior_3/limited_rot_speed: 0.4
+ * /move_base/recovery_behavior_3/limited_trans_speed: 0.1
+ * /move_base/recovery_behavior_3/planner_namespace: TebLocalPlannerROS
+ * /move_base/recovery_behavior_enabled: False
+ * /move_base/recovery_behaviors: [{'type': 'clear_...
+ * /move_base/shutdown_costmaps: False
+ * /node_detection/node_name: /move_base
+ * /robot_BatteryCapacity: 6000
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom_combined
+ * /robot_pose_ekf/sensor_timeout: 2.0
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /rplidarNode/angle1_end: 70.0
+ * /rplidarNode/angle1_start: 50.0
+ * /rplidarNode/angle2_end: 240.0
+ * /rplidarNode/angle2_start: 120.0
+ * /rplidarNode/angle3_end: 310.0
+ * /rplidarNode/angle3_start: 290.0
+ * /rplidarNode/angle4_end: 0.0
+ * /rplidarNode/angle4_start: 0.0
+ * /rplidarNode/angle_end: 360.0
+ * /rplidarNode/angle_start: 0.0
+ * /rplidarNode/distance_max: 30.0
+ * /rplidarNode/distance_min: 0.0
+ * /rplidarNode/is_parted: False
+ * /wheeltec_robot/car_mode: senior_akm
+ * /wheeltec_robot/gyro_frame_id: gyro_link
+ * /wheeltec_robot/odom_frame_id: odom_combined
+ * /wheeltec_robot/odom_x_scale: 1.0
+ * /wheeltec_robot/odom_y_scale: 1.0
+ * /wheeltec_robot/odom_z_scale_negative: 1.0
+ * /wheeltec_robot/odom_z_scale_positive: 1.0
+ * /wheeltec_robot/robot_frame_id: base_footprint
+ * /wheeltec_robot/serial_baud_rate: 115200
+ * /wheeltec_robot/usart_port_name: /dev/wheeltec_con...
+
+NODES
+  /
+    amcl (amcl/amcl)
+    base_to_camera (tf/static_transform_publisher)
+    base_to_gyro (tf/static_transform_publisher)
+    base_to_laser (tf/static_transform_publisher)
+    base_to_link (tf/static_transform_publisher)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    lslidar_driver_node (lslidar_driver/lslidar_driver_node)
+    map_server_for_test (map_server/map_server)
+    move_base (move_base/move_base)
+    node_detection (turn_on_wheeltec_robot/node_ping.py)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    send_mark (turn_on_wheeltec_robot/send_mark.py)
+    wheeltec_robot (turn_on_wheeltec_robot/wheeltec_robot_node)
+
+[1mROS_MASTER_URI=http://192.168.0.100:11311[0m
+[1mprocess[wheeltec_robot-15]: started with pid [6896][0m
+[1mprocess[move_base-16]: started with pid [6897][0m
+[1mprocess[base_to_link-17]: started with pid [6908][0m
+[1mprocess[base_to_laser-18]: started with pid [6910][0m
+[1mprocess[base_to_camera-19]: started with pid [6916][0m
+[1mprocess[base_to_gyro-20]: started with pid [6933][0m
+[1mprocess[joint_state_publisher-21]: started with pid [6935][0m
+[1mprocess[robot_state_publisher-22]: started with pid [6940][0m
+[1mprocess[robot_pose_ekf-23]: started with pid [6943][0m
+[1mprocess[lslidar_driver_node-24]: started with pid [6953][0m
+Traceback (most recent call last):
+  File "/home/wheeltec/wheeltec_robot/src/turn_on_wheeltec_robot/scripts/send_mark.py", line 345, in <module>
+    settings = termios.tcgetattr(sys.stdin) #获取键值初始化
+termios.error: (25, 'Inappropriate ioctl for device')
+[31m[send_mark-27] process has died [pid 6989, exit code 1, cmd /home/wheeltec/wheeltec_robot/src/turn_on_wheeltec_robot/scripts/send_mark.py __name:=send_mark __log:=/home/wheeltec/.ros/log/e724125c-e0a8-11f0-8fab-d83add7a870d/send_mark-27.log].
+log file: /home/wheeltec/.ros/log/e724125c-e0a8-11f0-8fab-d83add7a870d/send_mark-27*.log[0m
+/opt/ros/melodic/lib/python2.7/dist-packages/roslib/packages.py:470: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  if resource_name in files:
+Traceback (most recent call last):
+  File "/home/wheeltec/wheeltec_robot/src/auto_recharge_ros/scripts/auto_recharger_v1.py", line 69, in <module>
+    settings = termios.tcgetattr(sys.stdin)
+termios.error: (25, 'Inappropriate ioctl for device')
+[31m[auto_recharger-29] process has died [pid 7222, exit code 1, cmd /home/wheeltec/wheeltec_robot/src/auto_recharge_ros/scripts/auto_recharger_v1.py __name:=auto_recharger __log:=/home/wheeltec/.ros/log/e724125c-e0a8-11f0-8fab-d83add7a870d/auto_recharger-29.log].
+log file: /home/wheeltec/.ros/log/e724125c-e0a8-11f0-8fab-d83add7a870d/auto_recharger-29*.log[0m

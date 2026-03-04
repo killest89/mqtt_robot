@@ -1,0 +1,533 @@
+wheeltec@wheeltec:~$ cd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts
+wheeltec@wheeltec:~/wheeltec_robot/src/simple_follower/scripts$ bash start_line.sh
+==========================================
+   Wheeltec机器人系统启动脚本
+   启动时间: Tue Jan 27 10:52:08 CST 2026
+==========================================
+等待ROS核心启动...
+启动MQTT桥接节点...
+MQTT桥接节点PID: 14026
+等待MQTT桥接节点初始化...
+... logging to /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/roslaunch-wheeltec-14026.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://192.168.0.100:38895/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    mqtt_bridge (simple_follower/mqtt_bridge.py)
+
+auto-starting new master
+process[master]: started with pid [14121]
+ROS_MASTER_URI=http://192.168.0.100:11311
+
+setting /run_id to 31ffa18c-fb2b-11f0-af4d-d83add7a870d
+process[rosout-1]: started with pid [14191]
+started core service [/rosout]
+process[mqtt_bridge-2]: started with pid [14198]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14198, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14200]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14200, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+failed to start local process: /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log
+[mqtt_bridge-2] process has died [pid 14200, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14208]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14208, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14214]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14214, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14215]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14215, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14217]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14217, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14218]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14218, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14224]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14224, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14226]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14226, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14232]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14232, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14234]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14234, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14235]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14235, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+process[mqtt_bridge-2]: started with pid [14241]
+[mqtt_bridge-2] process has died [pid 14241, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14242]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14242, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+process[mqtt_bridge-2]: started with pid [14245]
+启动寻线节点...
+寻线节点PID: 14246
+==========================================
+   机器人系统启动完成
+   MQTT桥接节点: 14026
+   寻线节点: 14246
+==========================================
+[mqtt_bridge-2] process has died [pid 14245, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14249]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14249, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+failed to start local process: /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log
+[mqtt_bridge-2] process has died [pid 14249, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14259]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14259, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14261]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14261, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14266]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14266, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14268]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14268, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14270]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14270, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14275]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14275, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14277]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14277, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14278]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14278, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14284]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14284, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14286]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14286, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14292]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14292, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14294]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14294, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14295]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14295, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录process[mqtt_bridge-2]: started with pid [14301]
+
+[mqtt_bridge-2] process has died [pid 14301, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14304]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14304, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14305]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14305, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+failed to start local process: /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log
+[mqtt_bridge-2] process has died [pid 14305, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14313]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14313, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14314]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14314, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14320]
+/usr/bin/env: "python\r": 没有那个文件或目录
+... logging to /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/roslaunch-wheeltec-14246.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[mqtt_bridge-2] process has died [pid 14320, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14323]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14323, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14324]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14324, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+Done checking log file disk usage. Usage is <1GB.
+
+process[mqtt_bridge-2]: started with pid [14330]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14330, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14333]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14333, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14334]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14334, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14340]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14340, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+process[mqtt_bridge-2]: started with pid [14342]
+[mqtt_bridge-2] process has died [pid 14342, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14343]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14343, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14349]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14349, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14351]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14351, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14352]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14352, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14359]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14359, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14360]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14360, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14367]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14367, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14369]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14369, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14375]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14375, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14377]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14377, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14383]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14383, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+process[mqtt_bridge-2]: started with pid [14385]
+[mqtt_bridge-2] process has died [pid 14385, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14386]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14386, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14392]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14392, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14394]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14394, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14395]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14395, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14401]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14401, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14403]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14403, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14404]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14404, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14410]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14410, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14412]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14412, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+started roslaunch server http://192.168.0.100:44447/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/depth_registered_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: True
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /if_akm_yes_or_no: yes
+ * /line_tracker/show_debug_window: True
+ * /robot_BatteryCapacity: 6000
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom_combined
+ * /robot_pose_ekf/sensor_timeout: 2.0
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /wheeltec_robot/car_mode: senior_akm
+ * /wheeltec_robot/gyro_frame_id: gyro_link
+ * /wheeltec_robot/odom_frame_id: odom_combined
+ * /wheeltec_robot/odom_x_scale: 1.0
+ * /wheeltec_robot/odom_y_scale: 1.0
+ * /wheeltec_robot/odom_z_scale_negative: 1.0
+ * /wheeltec_robot/odom_z_scale_positive: 1.0
+ * /wheeltec_robot/robot_frame_id: base_footprint
+ * /wheeltec_robot/serial_baud_rate: 115200
+ * /wheeltec_robot/usart_port_name: /dev/wheeltec_con...
+
+NODES
+  /
+    avoidance (simple_follower/avoidance)
+    base_to_camera (tf/static_transform_publisher)
+    base_to_gyro (tf/static_transform_publisher)
+    base_to_laser (tf/static_transform_publisher)
+    base_to_link (tf/static_transform_publisher)
+    camera_base_link (tf2_ros/static_transform_publisher)
+    camera_base_link1 (tf2_ros/static_transform_publisher)
+    camera_base_link2 (tf2_ros/static_transform_publisher)
+    camera_base_link3 (tf2_ros/static_transform_publisher)
+    image_transport (image_transport/republish)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    line_tracker (simple_follower/line_follow.py)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    wheeltec_robot (turn_on_wheeltec_robot/wheeltec_robot_node)
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_hw_metric_rect (nodelet/nodelet)
+    depth_registered_metric (nodelet/nodelet)
+    depth_registered_rectify_depth (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_hw_registered (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+
+process[mqtt_bridge-2]: started with pid [14418]
+/usr/bin/env: "python\r": 没有那个文件或目录
+ROS_MASTER_URI=http://192.168.0.100:11311
+
+[mqtt_bridge-2] process has died [pid 14418, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+failed to start local process: /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log
+[mqtt_bridge-2] process has died [pid 14418, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14430]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14430, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14431]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14431, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14437]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14437, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14439]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14439, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14440]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14440, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14446]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14446, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14448]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14448, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14449]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14449, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14455]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14455, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14457]
+/usr/bin/env: "python\r": 没有那个文件或目录
+[mqtt_bridge-2] process has died [pid 14457, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+/usr/bin/env: "python\r": 没有那个文件或目录
+failed to start local process: /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log
+process[camera/camera_nodelet_manager-1]: started with pid [14461]
+[mqtt_bridge-2] process has died [pid 14457, exit code 127, cmd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts/mqtt_bridge.py __name:=mqtt_bridge __log:=/home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2.log].
+log file: /home/wheeltec/.ros/log/31ffa18c-fb2b-11f0-af4d-d83add7a870d/mqtt_bridge-2*.log
+[mqtt_bridge-2] restarting process
+process[mqtt_bridge-2]: started with pid [14465]
+/usr/bin/env: "python\r": 没有那个文件或目录
+^C捕获到中断信号，清理资源...
+[mqtt_bridge-2] killing on exit
+终止寻线节点 (PID: 14246)...
+[camera/camera_nodelet_manager-1] killing on exit
+[camera/driver-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+强制终止寻线节点...
+机器人系统已关闭

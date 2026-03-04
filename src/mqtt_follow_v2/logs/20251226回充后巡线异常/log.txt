@@ -1,0 +1,464 @@
+wheeltec@wheeltec:~/wheeltec_robot/src/simple_follower/scripts$ bash start_line.sh
+==========================================
+   Wheeltec机器人系统启动脚本
+   启动时间: Fri Dec 26 17:18:05 CST 2025
+==========================================
+等待ROS核心启动...
+启动MQTT桥接节点...
+MQTT桥接节点PID: 10521
+等待MQTT桥接节点初始化...
+... logging to /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/roslaunch-wheeltec-10521.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://192.168.0.100:35605/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    mqtt_bridge (simple_follower/mqtt_bridge.py)
+
+auto-starting new master
+process[master]: started with pid [10683]
+启动寻线节点...
+寻线节点PID: 10703
+==========================================
+   机器人系统启动完成
+   MQTT桥接节点: 10521
+   寻线节点: 10703
+==========================================
+ROS_MASTER_URI=http://192.168.0.100:11311
+
+setting /run_id to d169bcc0-e23b-11f0-bb94-d83add7a870d
+process[rosout-1]: started with pid [10742]
+started core service [/rosout]
+process[mqtt_bridge-2]: started with pid [10745]
+... logging to /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/roslaunch-wheeltec-10703.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+[INFO] [1766740708.062590]: [MQTT Bridge] 串口初始化成功
+[INFO] [1766740708.249487]: [MQTT Bridge] 成功连接到MQTT服务器
+[INFO] [1766740708.267079]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766740708.298068]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766740708.310622]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766740710.689279]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1766740710.696738]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1766740710.724383]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1766740710.733262]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: False)...
+[INFO] [1766740710.748487]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1766740710.833156]: [MQTT Bridge] 巡线节点启动成功，PID: 10823
+started roslaunch server http://192.168.0.100:45921/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/depth_registered_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: True
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /if_akm_yes_or_no: yes
+ * /line_tracker/show_debug_window: True
+ * /robot_BatteryCapacity: 6000
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom_combined
+ * /robot_pose_ekf/sensor_timeout: 2.0
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /wheeltec_robot/car_mode: senior_akm
+ * /wheeltec_robot/gyro_frame_id: gyro_link
+ * /wheeltec_robot/odom_frame_id: odom_combined
+ * /wheeltec_robot/odom_x_scale: 1.0
+ * /wheeltec_robot/odom_y_scale: 1.0
+ * /wheeltec_robot/odom_z_scale_negative: 1.0
+ * /wheeltec_robot/odom_z_scale_positive: 1.0
+ * /wheeltec_robot/robot_frame_id: base_footprint
+ * /wheeltec_robot/serial_baud_rate: 115200
+ * /wheeltec_robot/usart_port_name: /dev/wheeltec_con...
+
+NODES
+  /
+    avoidance (simple_follower/avoidance)
+    base_to_camera (tf/static_transform_publisher)
+    base_to_gyro (tf/static_transform_publisher)
+    base_to_laser (tf/static_transform_publisher)
+    base_to_link (tf/static_transform_publisher)
+    camera_base_link (tf2_ros/static_transform_publisher)
+    camera_base_link1 (tf2_ros/static_transform_publisher)
+    camera_base_link2 (tf2_ros/static_transform_publisher)
+    camera_base_link3 (tf2_ros/static_transform_publisher)
+    image_transport (image_transport/republish)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    line_tracker (simple_follower/line_follow.py)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    wheeltec_robot (turn_on_wheeltec_robot/wheeltec_robot_node)
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_hw_metric_rect (nodelet/nodelet)
+    depth_registered_metric (nodelet/nodelet)
+    depth_registered_rectify_depth (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_hw_registered (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+
+ROS_MASTER_URI=http://192.168.0.100:11311
+
+process[camera/camera_nodelet_manager-1]: started with pid [10869]
+process[camera/driver-2]: started with pid [10870]
+process[camera/rgb_rectify_color-3]: started with pid [10871]
+process[camera/depth_rectify_depth-4]: started with pid [10878]
+process[camera/depth_metric_rect-5]: started with pid [10888]
+process[camera/depth_metric-6]: started with pid [10891]
+process[camera/depth_points-7]: started with pid [10897]
+process[camera/depth_registered_rectify_depth-8]: started with pid [10903]
+process[camera/points_xyzrgb_hw_registered-9]: started with pid [10917]
+process[camera/depth_registered_hw_metric_rect-10]: started with pid [10930]
+[ INFO] [1766740715.492227406]: Initializing nodelet with 4 worker threads.
+process[camera/depth_registered_metric-11]: started with pid [10939]
+process[camera_base_link-12]: started with pid [10944]
+[INFO] [1766740715.874187]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+[ INFO] [1766740716.072306192]: Device "2bc5/0402@1/13" found.
+process[camera_base_link1-13]: started with pid [10952]
+process[camera_base_link2-14]: started with pid [10969]
+Warning: USB events thread - failed to set priority. This might cause loss of data...
+process[camera_base_link3-15]: started with pid [10972]
+process[image_transport-16]: started with pid [10977]
+[ INFO] [1766740716.482924347]: device name: Orbbec Astra S
+process[line_tracker-17]: started with pid [10991]
+process[avoidance-18]: started with pid [10997]
+process[wheeltec_robot-19]: started with pid [11017]
+process[base_to_link-20]: started with pid [11019]
+process[base_to_laser-21]: started with pid [11020]
+process[base_to_camera-22]: started with pid [11030]
+process[base_to_gyro-23]: started with pid [11034]
+[ INFO] [1766740718.111717832]: Data ready
+process[joint_state_publisher-24]: started with pid [11043]
+[ INFO] [1766740718.194519643]: wheeltec_robot serial port opened
+Robot is charging.
+Robot charging has disconnected.
+Robot is charging.
+process[robot_state_publisher-25]: started with pid [11045]
+process[robot_pose_ekf-26]: started with pid [11057]
+[INFO] [1766740718.925854]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766740718.965228]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766740719.017944]: [MQTT Bridge] 切换到巡线模式完成
+[ INFO] [1766740719.435780831]: output frame: odom_combined
+[ INFO] [1766740719.470291643]: base frame: base_footprint
+[ INFO] [1766740719.765332975]: Initializing Odom sensor
+[ INFO] [1766740719.765504956]: Odom sensor activated
+[ INFO] [1766740719.797084231]: Kalman filter initialized with odom measurement
+[ INFO] [1766740719.953842099]: Initializing Imu sensor
+[ INFO] [1766740720.016433248]: Imu sensor activated
+[ INFO] [1766740724.303874269]: Starting color stream.
+[ INFO] [1766740726.633114091]: using default calibration URL
+[ INFO] [1766740726.635017774]: camera calibration URL: file:///home/wheeltec/.ros/camera_info/rgb_Astra_Orbbec.yaml
+[INFO] [1766740730.810329]: [Line Follower] 调试窗口显示模式: 开启
+[INFO] [1766740730.923634]: [Line Follower] 寻线节点初始化完成，等待启动指令...
+[INFO] [1766740731.686573]: [Line Follower] 显示窗口初始化成功
+[ WARN] [1766740733.290243353]: Shutdown request received. Reason: [[/camera/rgb_rectify_color] Reason: new node registered with same name]
+[ WARN] [1766740733.400615515]: Shutdown request received. Reason: [[/camera/driver] Reason: new node registered with same name]
+[ERROR] [1766740733.605137138]: Cannot load nodelet /camera/driver for one exists with that name already
+[ WARN] [1766740733.924503073]: Shutdown request received. Reason: [[/camera/depth_metric_rect] Reason: new node registered with same name]
+[camera/rgb_rectify_color-3] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-rgb_rectify_color-3*.log
+[ WARN] [1766740734.024299532]: Shutdown request received. Reason: [[/camera/depth_rectify_depth] Reason: new node registered with same name]
+[ WARN] [1766740734.142560763]: Shutdown request received.
+[ WARN] [1766740734.142962261]: Reason given for shutdown: [[/camera/camera_nodelet_manager] Reason: new node registered with same name]
+[ WARN] [1766740734.336486735]: Shutdown request received. Reason: [[/camera/depth_metric] Reason: new node registered with same name]
+[ WARN] [1766740734.587738871]: Shutdown request received. Reason: [[/camera/depth_registered_rectify_depth] Reason: new node registered with same name]
+[ WARN] [1766740734.667886766]: Couldn't find service camera_nodelet_manager/unload_nodelet, perhaps the manager is already shut down
+[ WARN] [1766740734.696785187]: Shutdown request received. Reason: [[/camera/depth_points] Reason: new node registered with same name]
+[ WARN] [1766740734.811043648]: Couldn't find service camera_nodelet_manager/unload_nodelet, perhaps the manager is already shut down
+[camera/depth_metric-6] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-depth_metric-6*.log
+[camera/depth_registered_rectify_depth-8] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-depth_registered_rectify_depth-8*.log
+[camera/depth_points-7] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-depth_points-7*.log
+[ WARN] [1766740735.251919309]: Shutdown request received. Reason: [[/camera/depth_registered_hw_metric_rect] Reason: new node registered with same name]
+[ WARN] [1766740735.307859820]: Couldn't find service camera_nodelet_manager/unload_nodelet, perhaps the manager is already shut down
+[ WARN] [1766740735.422599350]: Shutdown request received. Reason: [[/camera/points_xyzrgb_hw_registered] Reason: new node registered with same name]
+[ WARN] [1766740735.524159440]: Shutdown request received.
+[ WARN] [1766740735.524483636]: Reason given for shutdown: [[/camera_base_link] Reason: new node registered with same name]
+[ WARN] [1766740735.550437028]: Couldn't find service camera_nodelet_manager/unload_nodelet, perhaps the manager is already shut down
+[ WARN] [1766740735.934289074]: Shutdown request received. Reason: [[/camera/depth_registered_metric] Reason: new node registered with same name]
+[ WARN] [1766740735.956138335]: Couldn't find service camera_nodelet_manager/unload_nodelet, perhaps the manager is already shut down
+[camera/points_xyzrgb_hw_registered-9] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-points_xyzrgb_hw_registered-9*.log
+[ WARN] [1766740735.961108154]: Shutdown request received.
+[ WARN] [1766740735.961274049]: Reason given for shutdown: [[/camera_base_link1] Reason: new node registered with same name]
+[camera/depth_registered_hw_metric_rect-10] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-depth_registered_hw_metric_rect-10*.log
+[camera_base_link-12] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera_base_link-12*.log
+[ WARN] [1766740736.273549525]: Shutdown request received.
+[ WARN] [1766740736.273866919]: Reason given for shutdown: [[/camera_base_link3] Reason: new node registered with same name]
+[ WARN] [1766740736.428603732]: Shutdown request received.
+[ WARN] [1766740736.428764048]: Reason given for shutdown: [[/camera_base_link2] Reason: new node registered with same name]
+[camera/depth_registered_metric-11] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-depth_registered_metric-11*.log
+[camera_base_link1-13] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera_base_link1-13*.log
+[camera_base_link3-15] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera_base_link3-15*.log
+[camera_base_link2-14] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera_base_link2-14*.log
+[ WARN] [1766740737.333628143]: Shutdown request received.
+[ WARN] [1766740737.364944464]: Reason given for shutdown: [[/avoidance] Reason: new node registered with same name]
+[ WARN] [1766740737.648726151]: Shutdown request received.
+[ WARN] [1766740737.678773402]: Reason given for shutdown: [[/image_transport] Reason: new node registered with same name]
+[ WARN] [1766740738.052959572]: Shutdown request received.
+[ WARN] [1766740738.053142412]: Reason given for shutdown: [[/wheeltec_robot] Reason: new node registered with same name]
+[avoidance-18] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/avoidance-18*.log
+[ WARN] [1766740738.105699256]: Shutdown request received.
+[WARN] [1766740738.125481]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[ WARN] [1766740738.139278195]: Reason given for shutdown: [[/base_to_link] Reason: new node registered with same name]
+[base_to_link-20] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/base_to_link-20*.log
+[ WARN] [1766740738.988892533]: Shutdown request received.
+[camera/depth_rectify_depth-4] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-depth_rectify_depth-4*.log
+[camera/depth_metric_rect-5] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-depth_metric_rect-5*.log
+[wheeltec_robot-19] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/wheeltec_robot-19*.log
+[ WARN] [1766740739.120736968]: Reason given for shutdown: [[/base_to_laser] Reason: new node registered with same name]
+[ WARN] [1766740739.166671836]: Shutdown request received.
+[image_transport-16] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/image_transport-16*.log
+[ WARN] [1766740739.232039523]: Reason given for shutdown: [[/base_to_camera] Reason: new node registered with same name]
+[camera/driver-2] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-driver-2*.log
+[ WARN] [1766740739.630320651]: Shutdown request received.
+[base_to_camera-22] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/base_to_camera-22*.log
+[ WARN] [1766740739.732843989]: Reason given for shutdown: [[/base_to_gyro] Reason: new node registered with same name]
+[base_to_laser-21] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/base_to_laser-21*.log
+[ INFO] [1766740740.063518975]: Imu sensor not active any more
+[ WARN] [1766740740.072799228]: Shutdown request received.
+[ WARN] [1766740740.122509450]: Shutdown request received.
+[ WARN] [1766740740.122811959]: Reason given for shutdown: [[/robot_pose_ekf] Reason: new node registered with same name]
+[ WARN] [1766740740.124651137]: Reason given for shutdown: [[/robot_state_publisher] Reason: new node registered with same name]
+[base_to_gyro-23] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/base_to_gyro-23*.log
+[robot_state_publisher-25] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/robot_state_publisher-25*.log
+[robot_pose_ekf-26] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/robot_pose_ekf-26*.log
+[camera/camera_nodelet_manager-1] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/camera-camera_nodelet_manager-1*.log
+[joint_state_publisher-24] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/joint_state_publisher-24*.log
+shutdown request: [/line_tracker] Reason: new node registered with same name
+[INFO] [1766740746.925304]: [Line Follower] 开始清理资源...
+[INFO] [1766740747.146036]: [Line Follower] 资源清理完成
+[INFO] [1766740747.383840]: [Line Follower] 开始清理资源...
+[INFO] [1766740747.394606]: [Line Follower] 资源清理完成
+[line_tracker-17] process has finished cleanly
+log file: /home/wheeltec/.ros/log/d169bcc0-e23b-11f0-bb94-d83add7a870d/line_tracker-17*.log
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+警告: 寻线节点已停止，尝试重启...
+新的寻线节点PID: 11758
+nohup: 把输出追加到'nohup.out'
+[INFO] [1766740791.725232]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766740791.743736]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766740791.753805]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766740795.936924]: [MQTT Bridge] 巡线节点 /line_tracker 存在: True
+[INFO] [1766740795.970993]: [MQTT Bridge] 巡线节点已运行，直接发送 start 指令
+[INFO] [1766740796.019059]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766740796.065734]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766740796.085837]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1766740809.315599]: [MQTT Bridge] 收到继电器序列触发信号: follow_end, 消息类型: str
+[INFO] [1766740809.330184]: [MQTT Bridge] 收到 follow_end 消息，关闭灯光并启动回充流程
+[INFO] [1766740809.355001]: [MQTT Bridge] 继电器指令已发送: a00800a8
+[INFO] [1766740809.400263]: [MQTT Bridge] ========== 触发自动回充流程 ==========
+[INFO] [1766740809.457915]: [MQTT Bridge] 已创建回充模式标志文件
+[INFO] [1766740809.493422]: [MQTT Bridge] 步骤1: 停止寻线节点...
+[INFO] [1766740809.516451]: [MQTT Bridge] ========== 开始停止寻线节点 ==========
+[WARN] [1766740812.861166]: [MQTT Bridge] 停止节点超时: /line_tracker
+[WARN] [1766740816.260730]: [MQTT Bridge] 停止节点超时: /avoidance
+回充模式中，跳过巡线节点检查...
+[WARN] [1766740819.470458]: [MQTT Bridge] 停止节点超时: /camera_nodelet_manager
+[INFO] [1766740825.268061]: [MQTT Bridge] 成功停止节点: /wheeltec_robot
+[WARN] [1766740828.400886]: [MQTT Bridge] 停止节点超时: /base_to_link
+回充模式中，跳过巡线节点检查...
+[WARN] [1766740831.712397]: [MQTT Bridge] 停止节点超时: /base_to_laser
+[WARN] [1766740834.912618]: [MQTT Bridge] 停止节点超时: /base_to_camera
+[INFO] [1766740837.877533]: [MQTT Bridge] 成功停止节点: /base_to_gyro
+回充模式中，跳过巡线节点检查...
+[WARN] [1766740841.124458]: [MQTT Bridge] 停止节点超时: /robot_pose_ekf
+[WARN] [1766740844.452642]: [MQTT Bridge] 停止节点超时: /robot_state_publisher
+[WARN] [1766740847.685021]: [MQTT Bridge] 停止节点超时: /joint_state_publisher
+[INFO] [1766740847.721880]: [MQTT Bridge] 尝试终止寻线 launch 进程 PID: 11758
+回充模式中，跳过巡线节点检查...
+[INFO] [1766740849.740516]: [MQTT Bridge] 强制终止寻线 launch 进程
+[INFO] [1766740849.757536]: [MQTT Bridge] 等待节点完全停止...
+[INFO] [1766740852.683320]: [MQTT Bridge] 所有关键节点已停止
+[INFO] [1766740852.689753]: [MQTT Bridge] ========== 寻线节点停止完成 ==========
+[INFO] [1766740852.699677]: [MQTT Bridge] 步骤2: 启动回充脚本...
+[INFO] [1766740852.705885]: [MQTT Bridge] 以子进程启动回充脚本: /home/wheeltec/wheeltec_robot/src/auto_recharge_ros/scripts/line_auto_recharger_v2.py
+[INFO] [1766740852.735237]: [MQTT Bridge] 回充脚本进程 PID: 13152, 日志文件: /tmp/recharge_script.log
+[INFO] [1766740852.751300]: [MQTT Bridge] ========== 回充流程启动完成 ==========
+start_line.sh: 行 141: 11758 已杀死               nohup roslaunch simple_follower line_follower.launch
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+回充模式中，跳过巡线节点检查...
+[INFO] [1766741057.040324]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766741057.047163]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766741057.067712]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766741060.417117]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1766741060.425555]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1766741060.475115]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: True)...
+[INFO] [1766741060.477642]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1766741060.486750]: [MQTT Bridge] ========== 开始停止回充节点 ==========
+[INFO] [1766741060.552362]: [MQTT Bridge] 停止回充子进程 PID: 13152
+回充模式中，跳过巡线节点检查...
+[INFO] [1766741065.293985]: [MQTT Bridge] 已停止回充节点: /move_base
+[INFO] [1766741067.243594]: [MQTT Bridge] 已停止回充节点: /amcl
+[INFO] [1766741070.019010]: [MQTT Bridge] 已停止回充节点: /auto_recharger
+[INFO] [1766741071.895694]: [MQTT Bridge] 已停止回充节点: /map_server
+回充模式中，跳过巡线节点检查...
+[INFO] [1766741073.900831]: [MQTT Bridge] 已停止回充节点: /launch_looper
+[INFO] [1766741073.915980]: [MQTT Bridge] 已删除回充模式标志文件
+[INFO] [1766741076.963624]: [MQTT Bridge] ========== 回充节点停止完成 ==========
+[INFO] [1766741076.972169]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1766741077.005499]: [MQTT Bridge] 巡线节点启动成功，PID: 16730
+[INFO] [1766741082.012468]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+警告: 寻线节点已停止，尝试重启...
+新的寻线节点PID: 16805
+nohup: 把输出追加到'nohup.out'
+[INFO] [1766741085.025496]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766741085.038982]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766741085.047351]: [MQTT Bridge] 切换到巡线模式完成
+[INFO] [1766741172.167671]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766741172.173572]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766741172.191421]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766741173.991804]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1766741174.006156]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1766741174.017552]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: False)...
+[INFO] [1766741174.019697]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1766741174.035269]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1766741174.082626]: [MQTT Bridge] 巡线节点启动成功，PID: 18514
+[INFO] [1766741179.096562]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+[INFO] [1766741182.109899]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766741182.141442]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766741182.156673]: [MQTT Bridge] 切换到巡线模式完成
+警告: 寻线节点已停止，尝试重启...
+新的寻线节点PID: 18983
+nohup: 把输出追加到'nohup.out'
+[INFO] [1766741298.812430]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766741298.818408]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766741298.826670]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766741300.813387]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1766741300.825531]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1766741300.835360]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: False)...
+[INFO] [1766741300.837469]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1766741300.860953]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1766741300.922488]: [MQTT Bridge] 巡线节点启动成功，PID: 20810
+[INFO] [1766741305.958550]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+[INFO] [1766741308.978154]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766741308.985909]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766741308.994761]: [MQTT Bridge] 切换到巡线模式完成
+[INFO] [1766741352.257927]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766741352.264776]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766741352.276743]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766741356.288196]: [MQTT Bridge] 巡线节点 /line_tracker 存在: True
+[INFO] [1766741356.294217]: [MQTT Bridge] 巡线节点已运行，直接发送 start 指令
+[INFO] [1766741356.328098]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766741356.350296]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766741356.362474]: [MQTT Bridge] ========== start 指令处理完成 ==========
+警告: 寻线节点已停止，尝试重启...
+新的寻线节点PID: 21808
+nohup: 把输出追加到'nohup.out'
+[INFO] [1766741483.090402]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766741483.095150]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766741483.104405]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766741485.064909]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1766741485.072398]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1766741485.082302]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1766741485.090962]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: False)...
+[INFO] [1766741485.117330]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1766741485.156172]: [MQTT Bridge] 巡线节点启动成功，PID: 23773
+[INFO] [1766741490.171782]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+[INFO] [1766741493.197953]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766741493.213618]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766741493.220183]: [MQTT Bridge] 切换到巡线模式完成
+警告: 寻线节点已停止，尝试重启...
+新的寻线节点PID: 24334
+nohup: 把输出追加到'nohup.out'
+[INFO] [1766741534.145316]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766741534.166183]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766741534.190248]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766741537.496477]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1766741537.508808]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1766741537.517463]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1766741537.518439]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: False)...
+[INFO] [1766741537.537404]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1766741537.582415]: [MQTT Bridge] 巡线节点启动成功，PID: 24963
+[INFO] [1766741542.603091]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+[INFO] [1766741545.617296]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766741545.625048]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766741545.656708]: [MQTT Bridge] 切换到巡线模式完成
+警告: 寻线节点已停止，尝试重启...
+新的寻线节点PID: 25518
+nohup: 把输出追加到'nohup.out'
+[INFO] [1766741574.122706]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1766741574.133031]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1766741574.160892]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1766741577.227831]: [MQTT Bridge] 巡线节点 /line_tracker 存在: True
+[INFO] [1766741577.239366]: [MQTT Bridge] 巡线节点已运行，直接发送 start 指令
+[INFO] [1766741577.257941]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1766741577.278808]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1766741577.287354]: [MQTT Bridge] ========== start 指令处理完成 ==========
+

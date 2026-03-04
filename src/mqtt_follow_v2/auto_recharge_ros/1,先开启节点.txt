@@ -1,0 +1,103 @@
+wheeltec@wheeltec:~$ roslaunch turn_on_wheeltec_robot turn_on_wheeltec_robot.launch
+... logging to /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/roslaunch-wheeltec-6119.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://192.168.0.100:44333/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /if_akm_yes_or_no: yes
+ * /robot_BatteryCapacity: 6000
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom_combined
+ * /robot_pose_ekf/sensor_timeout: 2.0
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /wheeltec_robot/car_mode: senior_akm
+ * /wheeltec_robot/gyro_frame_id: gyro_link
+ * /wheeltec_robot/odom_frame_id: odom_combined
+ * /wheeltec_robot/odom_x_scale: 1.0
+ * /wheeltec_robot/odom_y_scale: 1.0
+ * /wheeltec_robot/odom_z_scale_negative: 1.0
+ * /wheeltec_robot/odom_z_scale_positive: 1.0
+ * /wheeltec_robot/robot_frame_id: base_footprint
+ * /wheeltec_robot/serial_baud_rate: 115200
+ * /wheeltec_robot/usart_port_name: /dev/wheeltec_con...
+
+NODES
+  /
+    base_to_camera (tf/static_transform_publisher)
+    base_to_gyro (tf/static_transform_publisher)
+    base_to_laser (tf/static_transform_publisher)
+    base_to_link (tf/static_transform_publisher)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    wheeltec_robot (turn_on_wheeltec_robot/wheeltec_robot_node)
+
+auto-starting new master
+process[master]: started with pid [6129]
+ROS_MASTER_URI=http://192.168.0.100:11311
+
+setting /run_id to 2f164390-dfdd-11f0-a5f7-90de8084d581
+process[rosout-1]: started with pid [6140]
+started core service [/rosout]
+process[wheeltec_robot-2]: started with pid [6147]
+process[base_to_link-3]: started with pid [6148]
+process[base_to_laser-4]: started with pid [6150]
+process[base_to_camera-5]: started with pid [6159]
+process[base_to_gyro-6]: started with pid [6162]
+[ INFO] [1766480155.755511499]: Data ready
+process[joint_state_publisher-7]: started with pid [6167]
+[ INFO] [1766480155.771650143]: wheeltec_robot serial port opened
+process[robot_state_publisher-8]: started with pid [6173]
+process[robot_pose_ekf-9]: started with pid [6175]
+[ INFO] [1766480156.129642833]: output frame: odom_combined
+[ INFO] [1766480156.134106161]: base frame: base_footprint
+[ INFO] [1766480156.423950693]: Initializing Odom sensor
+[ INFO] [1766480156.426372850]: Odom sensor activated
+[ INFO] [1766480156.459548023]: Kalman filter initialized with odom measurement
+[ INFO] [1766480156.560765265]: Initializing Imu sensor
+[ INFO] [1766480156.569353511]: Imu sensor activated
+[ WARN] [1766480200.022612842]: Shutdown request received.
+[ WARN] [1766480200.022768511]: Reason given for shutdown: [[/wheeltec_robot] Reason: new node registered with same name]
+terminate called after throwing an instance of 'serial::SerialException'
+  what():  SerialException device reports readiness to read but returned no data (device disconnected?) failed.
+[ WARN] [1766480200.344591961]: Shutdown request received.
+[ WARN] [1766480200.358245481]: Shutdown request received.
+[ WARN] [1766480200.359038011]: Reason given for shutdown: [[/base_to_laser] Reason: new node registered with same name]
+[ WARN] [1766480200.403519902]: Reason given for shutdown: [[/base_to_link] Reason: new node registered with same name]
+[ WARN] [1766480200.417385425]: Shutdown request received.
+[ WARN] [1766480200.427983307]: Reason given for shutdown: [[/base_to_camera] Reason: new node registered with same name]
+[ WARN] [1766480200.667625466]: Shutdown request received.
+[ WARN] [1766480200.677015107]: Reason given for shutdown: [[/base_to_gyro] Reason: new node registered with same name]
+[base_to_camera-5] process has finished cleanly
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/base_to_camera-5*.log
+[base_to_link-3] process has finished cleanly
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/base_to_link-3*.log
+[base_to_laser-4] process has finished cleanly
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/base_to_laser-4*.log
+[wheeltec_robot-2] process has died [pid 6147, exit code -6, cmd /home/wheeltec/wheeltec_robot/devel/lib/turn_on_wheeltec_robot/wheeltec_robot_node __name:=wheeltec_robot __log:=/home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/wheeltec_robot-2.log].
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/wheeltec_robot-2*.log
+[base_to_gyro-6] process has finished cleanly
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/base_to_gyro-6*.log
+[ WARN] [1766480201.060677824]: Shutdown request received.
+[ WARN] [1766480201.066408855]: Reason given for shutdown: [[/robot_state_publisher] Reason: new node registered with same name]
+[ WARN] [1766480201.108354007]: Shutdown request received.
+[ WARN] [1766480201.108530436]: Reason given for shutdown: [[/robot_pose_ekf] Reason: new node registered with same name]
+[robot_state_publisher-8] process has finished cleanly
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/robot_state_publisher-8*.log
+[robot_pose_ekf-9] process has finished cleanly
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/robot_pose_ekf-9*.log
+[joint_state_publisher-7] process has finished cleanly
+log file: /home/wheeltec/.ros/log/2f164390-dfdd-11f0-a5f7-90de8084d581/joint_state_publisher-7*.log
+

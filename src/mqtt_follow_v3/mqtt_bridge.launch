@@ -1,0 +1,4 @@
+<launch>
+    <!-- MQTT桥接节点 -->
+    <node name="mqtt_bridge" pkg="simple_follower" type="mqtt_bridge.py" output="screen" respawn="true"/>
+</launch>

@@ -1,0 +1,307 @@
+wheeltec@wheeltec:~$ cd /home/wheeltec/wheeltec_robot/src/simple_follower/scripts
+wheeltec@wheeltec:~/wheeltec_robot/src/simple_follower/scripts$ bash start_line.sh
+==========================================
+   Wheeltec机器人系统启动脚本
+   启动时间: Wed Jan 28 16:27:23 CST 2026
+==========================================
+等待ROS核心启动...
+启动MQTT桥接节点...
+MQTT桥接节点PID: 3470
+等待MQTT桥接节点初始化...
+... logging to /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/roslaunch-wheeltec-3470.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://192.168.0.100:41325/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    mqtt_bridge (simple_follower/mqtt_bridge.py)
+
+auto-starting new master
+process[master]: started with pid [3482]
+ROS_MASTER_URI=http://192.168.0.100:11311
+
+setting /run_id to 330165ae-fc23-11f0-a1e3-d83add7a870d
+process[rosout-1]: started with pid [3494]
+started core service [/rosout]
+process[mqtt_bridge-2]: started with pid [3497]
+[INFO] [1769588861.187107]: [MQTT Bridge] 串口初始化成功
+[INFO] [1769588861.483250]: [MQTT Bridge] 成功连接到MQTT服务器
+[INFO] [1769588861.565952]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1769588861.570291]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1769588861.574254]: [MQTT Bridge] ========== 处理 start 指令 ==========
+启动寻线节点...
+寻线节点PID: 3516
+==========================================
+   机器人系统启动完成
+   MQTT桥接节点: 3470
+   寻线节点: 3516
+==========================================
+[INFO] [1769588862.897067]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1769588862.904180]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1769588862.911299]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: False)...
+[INFO] [1769588862.912492]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1769588862.919737]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1769588862.966549]: [MQTT Bridge] 巡线节点启动成功，PID: 3523
+... logging to /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/roslaunch-wheeltec-3516.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://192.168.0.100:38961/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/depth_registered_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: True
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /if_akm_yes_or_no: yes
+ * /line_tracker/show_debug_window: True
+ * /robot_BatteryCapacity: 6000
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom_combined
+ * /robot_pose_ekf/sensor_timeout: 2.0
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /wheeltec_robot/car_mode: senior_akm
+ * /wheeltec_robot/gyro_frame_id: gyro_link
+ * /wheeltec_robot/odom_frame_id: odom_combined
+ * /wheeltec_robot/odom_x_scale: 1.0
+ * /wheeltec_robot/odom_y_scale: 1.0
+ * /wheeltec_robot/odom_z_scale_negative: 1.0
+ * /wheeltec_robot/odom_z_scale_positive: 1.0
+ * /wheeltec_robot/robot_frame_id: base_footprint
+ * /wheeltec_robot/serial_baud_rate: 115200
+ * /wheeltec_robot/usart_port_name: /dev/wheeltec_con...
+
+NODES
+  /
+    avoidance (simple_follower/avoidance)
+    base_to_camera (tf/static_transform_publisher)
+    base_to_gyro (tf/static_transform_publisher)
+    base_to_laser (tf/static_transform_publisher)
+    base_to_link (tf/static_transform_publisher)
+    camera_base_link (tf2_ros/static_transform_publisher)
+    camera_base_link1 (tf2_ros/static_transform_publisher)
+    camera_base_link2 (tf2_ros/static_transform_publisher)
+    camera_base_link3 (tf2_ros/static_transform_publisher)
+    image_transport (image_transport/republish)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    line_tracker (simple_follower/line_follow.py)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    wheeltec_robot (turn_on_wheeltec_robot/wheeltec_robot_node)
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_hw_metric_rect (nodelet/nodelet)
+    depth_registered_metric (nodelet/nodelet)
+    depth_registered_rectify_depth (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_hw_registered (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+
+ROS_MASTER_URI=http://192.168.0.100:11311
+
+process[camera/camera_nodelet_manager-1]: started with pid [3550]
+process[camera/driver-2]: started with pid [3551]
+process[camera/rgb_rectify_color-3]: started with pid [3552]
+[INFO] [1769588867.981641]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+process[camera/depth_rectify_depth-4]: started with pid [3553]
+process[camera/depth_metric_rect-5]: started with pid [3554]
+process[camera/depth_metric-6]: started with pid [3555]
+process[camera/depth_points-7]: started with pid [3565]
+process[camera/depth_registered_rectify_depth-8]: started with pid [3575]
+process[camera/points_xyzrgb_hw_registered-9]: started with pid [3579]
+process[camera/depth_registered_hw_metric_rect-10]: started with pid [3584]
+process[camera/depth_registered_metric-11]: started with pid [3591]
+process[camera_base_link-12]: started with pid [3600]
+process[camera_base_link1-13]: started with pid [3608]
+process[camera_base_link2-14]: started with pid [3614]
+process[camera_base_link3-15]: started with pid [3620]
+process[image_transport-16]: started with pid [3624]
+process[line_tracker-17]: started with pid [3634]
+[ WARN] [1769588869.313170287]: Shutdown request received.
+[ WARN] [1769588869.313348123]: Reason given for shutdown: [[/camera/driver] Reason: new node registered with same name]
+process[avoidance-18]: started with pid [3646]
+[ INFO] [1769588869.531364067]: Initializing nodelet with 4 worker threads.
+[ WARN] [1769588869.676940040]: Shutdown request received.
+[ WARN] [1769588869.677154173]: Reason given for shutdown: [[/camera/rgb_rectify_color] Reason: new node registered with same name]
+[ WARN] [1769588869.691998517]: Shutdown request received.
+[ WARN] [1769588869.692172797]: Reason given for shutdown: [[/camera/depth_rectify_depth] Reason: new node registered with same name]
+[camera/driver-2] process has died [pid 3551, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load astra_camera/AstraDriverNodelet camera_nodelet_manager /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info ir:=ir rgb:=rgb depth:=depth depth_registered:=depth_registered rgb/image:=rgb/image_raw depth/image:=depth_registered/image_raw __name:=driver __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-driver-2.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-driver-2*.log
+process[wheeltec_robot-19]: started with pid [3682]
+[ WARN] [1769588869.859099930]: Shutdown request received.
+[ WARN] [1769588869.859277710]: Reason given for shutdown: [[/camera/depth_metric_rect] Reason: new node registered with same name]
+[camera/rgb_rectify_color-3] process has died [pid 3552, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load image_proc/rectify camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_mono:=rgb/image_raw image_rect:=rgb/image_rect_color __name:=rgb_rectify_color __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-rgb_rectify_color-3.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-rgb_rectify_color-3*.log
+[camera/depth_rectify_depth-4] process has died [pid 3553, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load image_proc/rectify camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_mono:=depth/image_raw image_rect:=depth/image_rect_raw __name:=depth_rectify_depth __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_rectify_depth-4.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_rectify_depth-4*.log[ WARN] [1769588869.959634104]: Shutdown request received.
+
+[ WARN] [1769588869.960111184]: Reason given for shutdown: [[/camera/depth_metric] Reason: new node registered with same name]
+process[base_to_link-20]: started with pid [3694]
+[ WARN] [1769588870.026104581]: Shutdown request received.
+[ WARN] [1769588870.026352288]: Reason given for shutdown: [[/camera/depth_points] Reason: new node registered with same name]
+process[base_to_laser-21]: started with pid [3703]
+[ WARN] [1769588870.161936402]: Shutdown request received.
+[ WARN] [1769588870.162208739]: Reason given for shutdown: [[/camera/depth_registered_rectify_depth] Reason: new node registered with same name]
+[camera/depth_metric_rect-5] process has died [pid 3554, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load depth_image_proc/convert_metric camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_raw:=depth/image_rect_raw image:=depth/image_rect __name:=depth_metric_rect __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_metric_rect-5.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_metric_rect-5*.log
+process[base_to_camera-22]: started with pid [3712]
+[camera/depth_metric-6] process has died [pid 3555, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load depth_image_proc/convert_metric camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_raw:=depth/image_raw image:=depth/image __name:=depth_metric __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_metric-6.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_metric-6*.log
+[camera/depth_points-7] process has died [pid 3565, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load depth_image_proc/point_cloud_xyz camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_rect:=depth/image_rect_raw points:=depth/points __name:=depth_points __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_points-7.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_points-7*.log
+[ WARN] [1769588870.319684333]: Shutdown request received.
+[ WARN] [1769588870.319953504]: Reason given for shutdown: [[/camera/points_xyzrgb_hw_registered] Reason: new node registered with same name]
+[camera/depth_registered_rectify_depth-8] process has died [pid 3575, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load image_proc/rectify camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_mono:=depth_registered/image_raw image_rect:=depth_registered/hw_registered/image_rect_raw __name:=depth_registered_rectify_depth __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_registered_rectify_depth-8.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_registered_rectify_depth-8*.log
+process[base_to_gyro-23]: started with pid [3722]
+[ WARN] [1769588870.483702443]: Shutdown request received.
+[ WARN] [1769588870.484019410]: Reason given for shutdown: [[/camera/depth_registered_hw_metric_rect] Reason: new node registered with same name]
+[ WARN] [1769588870.553071993]: Shutdown request received.
+[ WARN] [1769588870.553650019]: Reason given for shutdown: [[/camera/camera_nodelet_manager] Reason: new node registered with same name]
+process[joint_state_publisher-24]: started with pid [3731]
+[camera/points_xyzrgb_hw_registered-9] process has died [pid 3579, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load depth_image_proc/point_cloud_xyzrgb camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info rgb/image_rect_color:=rgb/image_rect_color rgb/camera_info:=rgb/camera_info depth_registered/image_rect:=depth_registered/hw_registered/image_rect_raw depth_registered/points:=depth_registered/points __name:=points_xyzrgb_hw_registered __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-points_xyzrgb_hw_registered-9.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-points_xyzrgb_hw_registered-9*.log
+[ WARN] [1769588870.696148819]: Shutdown request received.
+[ WARN] [1769588870.696326247]: Reason given for shutdown: [[/camera/depth_registered_metric] Reason: new node registered with same name]
+[camera/depth_registered_hw_metric_rect-10] process has died [pid 3584, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load depth_image_proc/convert_metric camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_raw:=depth_registered/hw_registered/image_rect_raw image:=depth_registered/hw_registered/image_rect __name:=depth_registered_hw_metric_rect __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_registered_hw_metric_rect-10.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_registered_hw_metric_rect-10*.log
+process[robot_state_publisher-25]: started with pid [3759]
+[ WARN] [1769588870.905913566]: Shutdown request received.
+[ WARN] [1769588870.906142902]: Reason given for shutdown: [[/camera_base_link] Reason: new node registered with same name]
+[ INFO] [1769588870.915424750]: Data ready
+[camera/depth_registered_metric-11] process has died [pid 3591, exit code 255, cmd /opt/ros/melodic/lib/nodelet/nodelet load depth_image_proc/convert_metric camera_nodelet_manager --no-bond /camera/color/image_raw:=/camera/rgb/image_raw /camera/color/camera_info:=/camera/rgb/camera_info image_raw:=depth_registered/image_raw image:=depth_registered/image __name:=depth_registered_metric __log:=/home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_registered_metric-11.log].
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-depth_registered_metric-11*.log
+[ INFO] [1769588870.973517037]: wheeltec_robot serial port opened
+[INFO] [1769588870.993264]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1769588871.031153]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1769588871.073653]: [MQTT Bridge] 切换到巡线模式完成
+[ WARN] [1769588871.120567652]: Shutdown request received.
+[ WARN] [1769588871.123002090]: Reason given for shutdown: [[/camera_base_link1] Reason: new node registered with same name]
+[ WARN] [1769588871.167783066]: Shutdown request received.
+[ WARN] [1769588871.167976254]: Reason given for shutdown: [[/camera_base_link2] Reason: new node registered with same name]
+process[robot_pose_ekf-26]: started with pid [3776]
+[camera_base_link-12] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera_base_link-12*.log
+[ WARN] [1769588871.319323804]: Shutdown request received.
+[ WARN] [1769588871.319646790]: Reason given for shutdown: [[/camera_base_link3] Reason: new node registered with same name]
+[camera_base_link1-13] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera_base_link1-13*.log
+[camera_base_link2-14] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera_base_link2-14*.log
+[ WARN] [1769588871.489734170]: Shutdown request received.
+[ WARN] [1769588871.515931151]: Reason given for shutdown: [[/image_transport] Reason: new node registered with same name]
+Robot is charging.
+[camera_base_link3-15] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera_base_link3-15*.log
+[ WARN] [1769588871.730677673]: Shutdown request received.
+[ WARN] [1769588871.735807886]: Reason given for shutdown: [[/avoidance] Reason: new node registered with same name]
+[ INFO] [1769588871.875664680]: output frame: odom_combined
+[ INFO] [1769588871.883604318]: base frame: base_footprint
+[ WARN] [1769588872.029332759]: Shutdown request received.
+[ WARN] [1769588872.029961859]: Reason given for shutdown: [[/wheeltec_robot] Reason: new node registered with same name]
+[avoidance-18] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/avoidance-18*.log
+[ WARN] [1769588872.147128697]: Shutdown request received.
+[ WARN] [1769588872.152345778]: Reason given for shutdown: [[/base_to_link] Reason: new node registered with same name]
+[ WARN] [1769588872.469372272]: Shutdown request received.
+[wheeltec_robot-19] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/wheeltec_robot-19*.log
+[base_to_link-20] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/base_to_link-20*.log
+[ WARN] [1769588872.514575236]: Reason given for shutdown: [[/base_to_laser] Reason: new node registered with same name]
+[ WARN] [1769588872.563073258]: Shutdown request received.
+[ WARN] [1769588872.577090054]: Reason given for shutdown: [[/base_to_camera] Reason: new node registered with same name]
+[ WARN] [1769588872.606514274]: Shutdown request received.
+[ WARN] [1769588872.632728123]: Reason given for shutdown: [[/base_to_gyro] Reason: new node registered with same name]
+[base_to_laser-21] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/base_to_laser-21*.log
+[base_to_camera-22] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/base_to_camera-22*.log
+[ INFO] [1769588872.847042785]: Initializing Odom sensor
+[base_to_gyro-23] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/base_to_gyro-23*.log
+[ WARN] [1769588873.020954731]: Shutdown request received.
+[ WARN] [1769588873.021566608]: Reason given for shutdown: [[/robot_pose_ekf] Reason: new node registered with same name]
+[ WARN] [1769588873.061761519]: Shutdown request received.
+[ WARN] [1769588873.077529343]: Reason given for shutdown: [[/robot_state_publisher] Reason: new node registered with same name]
+[robot_state_publisher-25] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/robot_state_publisher-25*.log
+[robot_pose_ekf-26] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/robot_pose_ekf-26*.log
+[camera/camera_nodelet_manager-1] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/camera-camera_nodelet_manager-1*.log
+[image_transport-16] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/image_transport-16*.log
+[joint_state_publisher-24] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/joint_state_publisher-24*.log
+INFO: cannot create a symlink to latest log directory: [Errno 2] No such file or directory: '/home/wheeltec/.ros/log/latest'
+[INFO] [1769588877.096529]: [Line Follower] 调试窗口显示模式: 开启
+[INFO] [1769588877.121245]: [Line Follower] 寻线节点初始化完成，等待启动指令...
+shutdown request: [/line_tracker] Reason: new node registered with same name
+[INFO] [1769588877.322380]: [Line Follower] 显示窗口初始化成功
+[INFO] [1769588877.370639]: [Line Follower] 开始清理资源...
+[INFO] [1769588877.381474]: [Line Follower] 资源清理完成
+[INFO] [1769588877.398682]: [Line Follower] 开始清理资源...
+[INFO] [1769588877.420380]: [Line Follower] 资源清理完成
+[line_tracker-17] process has finished cleanly
+log file: /home/wheeltec/.ros/log/330165ae-fc23-11f0-a1e3-d83add7a870d/line_tracker-17*.log
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+[INFO] [1769588925.863437]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1769588925.867773]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1769588925.871949]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1769588926.994230]: [MQTT Bridge] 巡线节点 /line_tracker 存在: False
+[INFO] [1769588926.998894]: [MQTT Bridge] 巡线节点不存在，检查回充状态...
+[INFO] [1769588927.004124]: [MQTT Bridge] 开始切换到巡线模式 (需停止回充: False)...
+[INFO] [1769588927.004802]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1769588927.017146]: [MQTT Bridge] ========== 开始启动巡线节点 ==========
+[INFO] [1769588927.041314]: [MQTT Bridge] 巡线节点启动成功，PID: 3991
+[INFO] [1769588932.053946]: [MQTT Bridge] ========== 巡线节点启动完成 ==========
+[INFO] [1769588935.062269]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1769588935.069360]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1769588935.074863]: [MQTT Bridge] 切换到巡线模式完成
+[INFO] [1769589034.997550]: [MQTT Bridge] 收到消息: 'start', 类型=str, 长度=5
+[INFO] [1769589035.001892]: [MQTT Bridge] 收到字符串消息: start
+[INFO] [1769589035.006268]: [MQTT Bridge] ========== 处理 start 指令 ==========
+[INFO] [1769589036.128348]: [MQTT Bridge] 巡线节点 /line_tracker 存在: True
+[INFO] [1769589036.134514]: [MQTT Bridge] 巡线节点已运行，直接发送 start 指令
+[INFO] [1769589036.139895]: [MQTT Bridge] 继电器指令已发送: a00801a9
+[INFO] [1769589036.150957]: [MQTT Bridge] 已发送 start 指令并开灯
+[INFO] [1769589036.156939]: [MQTT Bridge] ========== start 指令处理完成 ==========
+[INFO] [1769589039.274567]: [MQTT Bridge] 巡线节点 /line_tracker 存在: True
