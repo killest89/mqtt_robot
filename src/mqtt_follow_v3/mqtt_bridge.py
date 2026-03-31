@@ -293,13 +293,17 @@ class MQTTBridge:
             # 检查是否为手动模式停止指令
             if hex_representation == MANUAL_STOP_CMD_HEX:
                 rospy.loginfo("[MQTT Bridge] 收到手动模式停止指令 (0x%s)", MANUAL_STOP_CMD_HEX.upper())
-                self.current_mode = "idle"
+                # 手动停止只暂停运动，不退出手动模式，保留继电器控制权
                 self.handle_manual_stop_command()
                 return
 
-            # 检查是否为手动采集温度指令（注意：此指令较短，使用 endswith 匹配）
-            if hex_representation == MANUAL_TEMP_CMD_HEX or hex_representation.endswith(MANUAL_TEMP_CMD_HEX):
-                rospy.loginfo("[MQTT Bridge] 收到手动采集温度指令 (0x%s)", MANUAL_TEMP_CMD_HEX.upper())
+            # 检查是否为手动采集温度指令
+            # 规格指令 002FF002CCC 为奇数长度(11字符)，hexlify 输出必为偶数长度，
+            # 因此取前10字符偶数前缀 "002ff002cc" 做匹配
+            manual_temp_prefix = "002ff002cc"
+            if hex_representation == MANUAL_TEMP_CMD_HEX or \
+               manual_temp_prefix in hex_representation:
+                rospy.loginfo("[MQTT Bridge] 收到手动采集温度指令 (hex: %s)", hex_representation)
                 self.handle_manual_temperature()
                 return
 
