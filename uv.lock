@@ -1,0 +1,8 @@
+git version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "mqtt-robot"
+version = "0.1.0"
+source = { virtual = "." }
