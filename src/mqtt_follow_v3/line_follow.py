@@ -90,23 +90,25 @@ class LineFollower:
         command = msg.data.lower()
         rospy.loginfo("[Line Follower] 收到控制命令: %s", command)
 
-        if command == "start" and (self.state == "WAITING" or self.state == "RECHARGING"):
+        if command == "start" and self.state != "FOLLOWING":
+            prev_state = self.state
             self.state = "FOLLOWING"
             self.follow_start_time = time.time()
-            # 重置检测标志
             self.red_detected = False
             self.green_detected = False
             self.yellow_detected = False
-            rospy.loginfo("[Line Follower] 开始自动模式寻线任务")
+            self.relay_sequence_completed = False
+            rospy.loginfo("[Line Follower] 开始自动模式寻线任务 (从 %s 切换)", prev_state)
 
-        elif command == "manual_start" and (self.state == "WAITING" or self.state == "RECHARGING"):
+        elif command == "manual_start" and self.state != "MANUAL_FOLLOWING":
+            prev_state = self.state
             self.state = "MANUAL_FOLLOWING"
             self.manual_follow_start_time = time.time()
-            # 重置检测标志
             self.red_detected = False
             self.green_detected = False
             self.yellow_detected = False
-            rospy.loginfo("[Line Follower] 开始手动模式寻线任务（红线优先，黄线备选跟踪）")
+            self.relay_sequence_completed = False
+            rospy.loginfo("[Line Follower] 开始手动模式寻线任务（从 %s 切换）", prev_state)
 
         elif command == "stop":
             self.state = "WAITING"
